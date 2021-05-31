@@ -1,0 +1,6 @@
+github.com/rwxrob/cmdbox v0.0.11 h1:boaa/KkUUav7bR8FHTrmDSgd5A+LLk+sBN1PiQXCs0U=
+github.com/rwxrob/cmdbox v0.0.11/go.mod h1:J7GCFdZ6kvjUj8RlDbJ6mLjTXsi0fj64Wzn2/fX8R8o=
+github.com/rwxrob/cmdbox-help v0.0.1 h1:DGjvSLp7rsu1Yfq+TU/Hxu5mPgUYVWiW9ZqQBcVeQK4=
+github.com/rwxrob/cmdbox-help v0.0.1/go.mod h1:1DMwhlSeBD06+19DrcImK2uVt+M4c5OR4i2MyS2bTYo=
+github.com/rwxrob/cmdbox-version v0.0.1 h1:aa9xh+D0DuuggIgLyOntHP1QZze4PG/nM/SixQ8s5LE=
+github.com/rwxrob/cmdbox-version v0.0.1/go.mod h1:3wdtRyEBgwCam1A8afIrUwFLI+eL6EOBOQE0thetO2I=
