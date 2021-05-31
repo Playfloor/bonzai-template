@@ -5,16 +5,16 @@
 
 This repo is a GitHub template designed to help create new CmdBox
 command modules quickly. It is kept in sync with the [latest CmdBox
-tagged version](). See the [check list](#check-list) to be sure
-you change everything and don't leave any of the defaults that might
-confuse users of your module. Every place `foo` or `_foo` appear in
-this document is something that needs to change. (Find them easily with
-`git grep foo`.) Keep in mind that the CmdBox modules document
-themselves with embedding usage and other documentation and therefore
-will likely not need a lot of content in this [README.md](README.md)
-file. Keep the `cmd.go` and `main.go` file names. Also keep the `cmd`
-package (which is ignored on import). (Delete and replace this paragraph
-with `dap` or `cap` in `vi`.)
+tagged version](https://github.com/rwxrob/cmdbox). See the [check
+list](#check-list) to be sure you change everything and don't leave any
+of the defaults that might confuse users of your module. Every place
+`foo` or `_foo` appear in this document is something that needs to
+change. (Find them easily with `git grep foo`.) Keep in mind that the
+CmdBox modules document themselves with embedding usage and other
+documentation and therefore will likely not need a lot of content in
+this [README.md](README.md) file. Keep the `cmd.go` and `main.go` file
+names. Also keep the `cmd` package (which is ignored on import). (Delete
+and replace this paragraph with `dap` or `cap` in `vi`.)
 
 ## Install 
 
