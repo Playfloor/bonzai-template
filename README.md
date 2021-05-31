@@ -51,21 +51,21 @@ foo version
 
 ## Check List
 
--[] Update GoDoc link
--[] Update Go Report Card link
--[] Update Go Coverage link
--[] Update starting summary paragraph
--[] Update the [Install](#install) section
--[] Update the [Usage](#usage) section
--[] Add more sections (if needed) but avoid
--[] Update the [Legal](#legal) section
--[] Confirm [LICENSE](LICENSE) file
--[] Confirm [DCO](DCO) file
--[] Rename the [`foo`](foo) directory
--[] Update the import in [`foo/main.go`](foo/main.go) file
--[] Update the [`go.mod`](go.mod) file (or run `go mod init`)
--[] Optionally remove `help` / `version` imports from [`cmd.go`](cmd.go)
--[] Remove WIP tag when ready
+- [ ] Update GoDoc link
+- [ ] Update Go Report Card link
+- [ ] Update Go Coverage link
+- [ ] Update starting summary paragraph
+- [ ] Update the [Install](#install) section
+- [ ] Update the [Usage](#usage) section
+- [ ] Add more sections (if needed) but avoid
+- [ ] Update the [Legal](#legal) section
+- [ ] Confirm [LICENSE](LICENSE) file
+- [ ] Confirm [DCO](DCO) file
+- [ ] Rename the [`foo`](foo) directory
+- [ ] Update the import in [`foo/main.go`](foo/main.go) file
+- [ ] Update the [`go.mod`](go.mod) file (or run `go mod init`)
+- [ ] Optionally remove `help` / `version` imports from [`cmd.go`](cmd.go)
+- [ ] Remove WIP tag when ready
 
 ## Legal
 
