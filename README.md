@@ -52,8 +52,6 @@ foo version
 ## Check List
 
 - [ ] Update GoDoc link
-- [ ] Update Go Report Card link
-- [ ] Update Go Coverage link
 - [ ] Update starting summary paragraph
 - [ ] Update the [Install](#install) section
 - [ ] Update the [Usage](#usage) section
