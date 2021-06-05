@@ -63,6 +63,7 @@ foo version
 - [ ] Update the import in [`foo/main.go`](foo/main.go) file
 - [ ] Update the [`go.mod`](go.mod) file (or run `go mod init`)
 - [ ] Optionally remove `help` / `version` imports from [`cmd.go`](cmd.go)
+- [ ] Code the [`cmd.go`](cmd.go) file and any dependencies
 - [ ] Remove WIP tag when ready
 
 ## Legal
