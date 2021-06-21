@@ -7,19 +7,21 @@ import (
 )
 
 func init() {
-	x := cmdbox.New("foo", "help", "version")
-	x.Usage = ``
+	x := cmdbox.Add("foo", "h|help", "version", "stuff")
+	x.Usage = `[h|help|version|stuff]`
 	x.Summary = `just a sample foo command`
 
-	// TODO consider removing for minimal builds
 	x.Description = `
-		The *foo* command does cool stuff. You can start the description
-		here and wrap it to look nice and it will just work. You can use
-		minimal markdown with one, two, or three stars and wrap things with
-		< and > to get uppercase with underline, as with options in a man
-		page. That is, if you use the cmdbox-help command module. Other
-		cmdbox-help modules might handle this Description differently but,
-		by convention, all are supposed to support the same minimal
-		CmdBox markdown.`
+		The foo command does foo stuff. You can start the description here
+		and wrap it to look nice and it will just work. Otherwise, just
+		follow the same guidelines as for Go documentation. Note that the
+		x.Method here is commented out since the main work is delegated to
+		the stuff subcommand. The help command, however, is the x.Default
+		because it is first. `
+
+	// 	x.Method = func(args []string) error {
+	// 		fmt.Println("would do foo stuff")
+	// 		return nil
+	// 	}
 
 }
