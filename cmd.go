@@ -8,8 +8,11 @@ import (
 
 func init() {
 	x := cmdbox.Add("foo", "h|help", "version", "stuff")
-	x.Usage = `[h|help|version|stuff]`
 	x.Summary = `just a sample foo command`
+	x.Usage = `[h|help|version|stuff]`
+	x.Version = `v0.0.1`
+	x.Copyright = `Copyright 2021 Robert S Muhlestin`
+	x.License = `Apache-2`
 
 	x.Description = `
 		The foo command does foo stuff. You can start the description here
