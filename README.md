@@ -46,6 +46,11 @@ things to consider while creating your first command module:
   documentation. This way a subcommand can easily be ported to another
   command module just by moving the file.
 
+* Try to use the existing `cmdbox.Messages` rather than add them. When a
+  message doesn't fit consider adding them in a way that someone else
+  forking your command module could easily replace to create, say, a
+  `cmdbox-foo-fr` version in that language.
+
 ## Install
 
 This command can be installed as a standalone program or composed into a
