@@ -1,19 +1,20 @@
 package foo
 
 import (
+	"log"
+
 	"github.com/rwxrob/cmdbox"
-	"github.com/rwxrob/cmdbox/util"
 )
 
-var Cmd = cmdbox.Command{
+var Cmd = &cmdbox.Cmd{
 
 	Name:      `foo`,
 	Summary:   `just a sample foo command`,
 	Usage:     `[bar|help]`,
 	Version:   `v0.0.1`,
-	Copyright: `Copyright 2021 Robert S Muhlestin`,
+	Copyright: `Copyright 2021 Robert S Muhlestein`,
 	License:   `Apache-2`,
-	Commands:  []cmdbox.Cmd{cmdbox.Help, bar},
+	Commands:  []*cmdbox.Cmd{cmdbox.Help, bar},
 
 	Description: `
 		The foo command does foo stuff. You can start the description here
@@ -24,16 +25,16 @@ var Cmd = cmdbox.Command{
 		because it is first. `,
 
 	Method: func(none ...string) error {
-		util.Log("would foo stuff")
+		log.Printf("would foo stuff")
 		return nil
 	},
 }
 
-var bar = cmdbox.Command{
+var bar = &cmdbox.Cmd{
 	Name:     `bar`,
-	Commands: []cmdbox.Cmd{cmdbox.Help},
+	Commands: []*cmdbox.Cmd{cmdbox.Help},
 	Method: func(none ...string) error {
-		util.Log("would bar stuff")
+		log.Printf("would bar stuff")
 		return nil
 	},
 }
