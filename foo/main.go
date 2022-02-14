@@ -2,7 +2,11 @@ package main
 
 import (
 	"github.com/rwxrob/cmdbox"
-	_ "github.com/rwxrob/cmdbox-foo"
+	foo "github.com/rwxrob/cmdbox-foo"
 )
 
-func main() { cmdbox.Execute() }
+func main() {
+	box := new(cmdbox.Box)
+	box.Cmd = foo.Cmd
+	box.Run()
+}
