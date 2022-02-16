@@ -1,12 +1,9 @@
 package main
 
 import (
-	"github.com/rwxrob/cmdbox"
-	foo "github.com/rwxrob/cmdbox-foo"
+	foo "github.com/rwxrob/bonzai-foo"
 )
 
 func main() {
-	box := new(cmdbox.Box)
-	box.Cmd = foo.Cmd
-	box.Run()
+	foo.Cmd.Run()
 }

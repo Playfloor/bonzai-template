@@ -1,14 +1,14 @@
-# cmdbox `foo` Command Module (Template)
+# Bonzai™ Sample `foo` Command (Template)
 
-*🎉 cmdbox uses and requires Go 1.18 ❤*
+*🎉 Bonzai requires Go 1.18 ❤*
 
 ![WIP](https://img.shields.io/badge/status-wip-red)
 [![GoDoc](https://godoc.org/cmdbox-foo?status.svg)](https://godoc.org/cmdbox-foo)
 [![License](https://img.shields.io/badge/license-Apache2-brightgreen.svg)](LICENSE)
 
-This repo is a GitHub template designed to help create new cmdbox
-command modules quickly. It is kept in sync with the [latest cmdbox
-tagged version](https://github.com/rwxrob/cmdbox). See the [check
+This repo is a GitHub template designed to help create new completable
+Bonzai command trees quickly. It is kept in sync with the [latest bonzai
+tagged version](https://github.com/rwxrob/bonzai). See the [check
 list](#check-list) to be sure you change everything and don't leave any
 of the defaults that might confuse users of your module. Here are some
 things to consider while creating your first command module:
@@ -17,7 +17,7 @@ things to consider while creating your first command module:
   change. (Find them easily with `git grep foo`.) Change the `foo.go`
   name and package to your own.
 
-* Keep in mind that the cmdbox modules document themselves with
+* Keep in mind that Bonzai commands document themselves with
   embedding usage and other documentation and therefore will likely not
   need a lot of content in this [README.md](README.md) file. 
 
@@ -29,21 +29,21 @@ things to consider while creating your first command module:
   CONTRIBUTING file is an legally precedented way of accepting
   contributions and is used by both the Linux and GitLab projects.
 
-* Keeping the trademark paragraph of this README.md helps preserve the
-  identity of the cmdbox project. We appreciate your help.
+* Keeping the trademark paragraph of this README.md to help preserve the
+  identity of the Bonzai™ project. We appreciate your help.
 
 ## Install
 
 This command can be installed as a standalone program or composed into a
-"box" of commands combined with other command modules.
+"tree" of commands.
 
 Use `go install` to install as a standalone:
 
 ```
-go install github.com/rwxrob/cmdbox-foo/foo@latest
+go install github.com/rwxrob/bonzai-foo/foo@latest
 ```
 
-> ⚠️ Note the use of `go get` for installation has been
+> ⚠️ Note the use of  `go get` for installation has been
 > deprecated since 1.17 even though many projects still included
 > outdated installation documentation.
 
@@ -96,7 +96,7 @@ foo help
 - [ ] Remove WIP tag from README.md when ready
 * [ ] Optionally register your repo by submitting [GitHub PR]
 
-[GitHub PR]: <https://github.com/rwxrob/register-cmdbox>
+[GitHub PR]: <https://github.com/rwxrob/register-bonzai>
 
 ## Legal
 
@@ -106,8 +106,8 @@ Released under the [Apache 2.0](LICENSE)
 Contributors and project participants implicitly accept the 
 [Developer Certificate of Authenticity (DCO)](DCO).
 
-"CmdBox" and "cmdbox" are legal trademarks of Robert S. Muhlestein but
-can be used freely to refer to the cmdbox project
-<https://github.com/rwxrob/cmdbox> without limitation. To avoid
+"Bonzai" and "bonzai" (purposefully misspelled) are legal trademarks of
+Robert S. Muhlestein but can be used freely to refer to the Bonzai
+project <https://github.com/rwxrob/bonzai> without limitation. To avoid
 potential developer confusion, intentionally using these trademarks to
 refer to other projects --- free or proprietary --- is prohibited.

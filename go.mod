@@ -1,5 +1,5 @@
-module github.com/rwxrob/cmdbox-foo
+module github.com/rwxrob/bonzai-foo
 
 go 1.18
 
-require github.com/rwxrob/cmdbox v0.8.0
+require github.com/rwxrob/bonzai v0.1.0

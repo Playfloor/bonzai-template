@@ -2,5 +2,7 @@ go 1.18
 
 use (
 	.
-	../cmdbox
+	../bonzai
 )
+
+replace github.com/rwxrob/bonzai v0.1.0 => ../bonzai
