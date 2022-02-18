@@ -4,7 +4,7 @@
 
 [![Go Version](https://img.shields.io/github/go-mod/go-version/rwxrob/bonzai)](https://tip.golang.org/doc/go1.18)
 ![WIP](https://img.shields.io/badge/status-wip-red)
-[![GoDoc](https://godoc.org/github.com/rwxrob/bonzai-foo?status.svg)](https://godoc.org/github.com/rwxrob/bonzai-foo)
+[![GoDoc](https://godoc.org/github.com/rwxrob/bonzai-template?status.svg)](https://godoc.org/github.com/rwxrob/bonzai-template)
 [![License](https://img.shields.io/badge/license-Apache2-brightgreen.svg)](LICENSE)
 
 This repo is a GitHub template designed to help create new completable
