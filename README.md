@@ -3,7 +3,7 @@
 *🎉 Bonzai requires Go 1.18 ❤*
 
 ![WIP](https://img.shields.io/badge/status-wip-red)
-[![GoDoc](https://godoc.org/cmdbox-foo?status.svg)](https://godoc.org/cmdbox-foo)
+[![GoDoc](https://godoc.org/bonzai-foo?status.svg)](https://godoc.org/bonzai-foo)
 [![License](https://img.shields.io/badge/license-Apache2-brightgreen.svg)](LICENSE)
 
 This repo is a GitHub template designed to help create new completable
@@ -34,7 +34,9 @@ things to consider while creating your first command module:
 
 ## Install
 
-This command can be installed as a standalone program or composed into a
+*Change this for your own install instructions and delete this line.*
+
+This command can be installed as a standalone program, composed into a
 "tree" of commands.
 
 Use `go install` to install as a standalone:
@@ -53,8 +55,8 @@ Use `import` as usual to add to a box:
 package main
 
 import (
-	"github.com/rwxrob/cmdbox"
-	foo "github.com/rwxrob/cmdbox-foo"
+	"github.com/rwxrob/bonzai"
+	foo "github.com/rwxrob/bonzai-foo"
 )
 
 func main() {
