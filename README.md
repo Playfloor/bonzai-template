@@ -1,9 +1,10 @@
 # Bonzai™ Sample `foo` Command (Template)
 
-*🎉 Bonzai requires Go 1.18 ❤*
+🎉***Bonzai shamelessly requires Go 1.18***💋
 
+[![Go Version](https://img.shields.io/github/go-mod/go-version/rwxrob/bonzai)](https://tip.golang.org/doc/go1.18)
 ![WIP](https://img.shields.io/badge/status-wip-red)
-[![GoDoc](https://godoc.org/bonzai-foo?status.svg)](https://godoc.org/bonzai-foo)
+[![GoDoc](https://godoc.org/github.com/rwxrob/bonzai-foo?status.svg)](https://godoc.org/github.com/rwxrob/bonzai-foo)
 [![License](https://img.shields.io/badge/license-Apache2-brightgreen.svg)](LICENSE)
 
 This repo is a GitHub template designed to help create new completable
@@ -60,9 +61,7 @@ import (
 )
 
 func main() {
-  box := new(cmdbox.Box)
-	box.Cmd = foo.Cmd
-	box.Run()
+  foo.Cmd.Run()
 }
 ```
 
@@ -105,8 +104,8 @@ foo help
 Copyright (c) 2021 Robert S. Muhlestein
 Released under the [Apache 2.0](LICENSE)
 
-Contributors and project participants implicitly accept the 
-[Developer Certificate of Authenticity (DCO)](DCO).
+Contributors implicitly accept the terms
+explained in [CONTRIBUTING](CONTRIBUTING).
 
 "Bonzai" and "bonzai" (purposefully misspelled) are legal trademarks of
 Robert S. Muhlestein but can be used freely to refer to the Bonzai
