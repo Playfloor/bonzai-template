@@ -65,6 +65,14 @@ func main() {
 }
 ```
 
+To activate bash completion just use the `complete -C` option from your
+`.bashrc` or command line. There is no messy sourcing required. All the
+completion is done by the program itself.
+
+```
+complete -C foo foo
+```
+
 ## Embedded Documentation
 
 See the [`foo.go`](foo.go) file itself for additional embedded
