@@ -3,12 +3,12 @@ package foo
 import (
 	"log"
 
-	"github.com/rwxrob/bonzai"
+	Z "github.com/rwxrob/bonzai"
 )
 
-var own = &bonzai.Cmd{
+var own = &Z.Cmd{
 	Name: `own`,
-	Call: func(none ...string) error {
+	Call: func(caller *Z.Cmd, none ...string) error {
 		log.Print("I'm in my own file.")
 		return nil
 	},
