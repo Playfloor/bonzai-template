@@ -1,5 +1,8 @@
 # Bonzai™ Sample `foo` Command (Template)
 
+*Previously, this repo was the cmdbox-template and has been repurposed
+for [Bonzai](https://github.com/rwxrob/bonzai).*
+
 🎉***Bonzai shamelessly requires Go 1.18***💋
 
 [![Go Version](https://img.shields.io/github/go-mod/go-version/rwxrob/bonzai)](https://tip.golang.org/doc/go1.18)
