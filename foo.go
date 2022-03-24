@@ -1,7 +1,6 @@
 package foo
 
 import (
-	"fmt"
 	"log"
 
 	"github.com/rwxrob/bonzai"
@@ -58,7 +57,6 @@ var Bar = &bonzai.Cmd{
 
 	Call: func(_ *bonzai.Cmd, _ ...string) error { // note conventional _
 		log.Printf("would bar stuff")
-		fmt.Println("bar")
 		return nil
 	},
 }
