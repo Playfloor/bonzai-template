@@ -14,13 +14,13 @@ making your first commit.*
 This command can be installed as a standalone program or composed into 
 a Bonzai command tree.
 
-Standalone: 
+Standalone
 
 ```
 go install github.com/rwxrob/foo/foo@latest
 ```
 
-Composed:
+Composed
 
 ```go
 package main
