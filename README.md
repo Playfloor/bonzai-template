@@ -4,9 +4,9 @@
 README.md to match your project. Make all your template changes before
 making your first commit.*
 
-[![Go Version](https://img.shields.io/github/go-mod/go-version/rwxrob/bonzai)](https://tip.golang.org/doc/go1.18)
 ![WIP](https://img.shields.io/badge/status-wip-red)
-[![GoDoc](https://godoc.org/github.com/rwxrob/bonzai-template?status.svg)](https://godoc.org/github.com/rwxrob/bonzai-template)
+![Go Version](https://img.shields.io/github/go-mod/go-version/rwxrob/foo)
+[![GoDoc](https://godoc.org/github.com/rwxrob/foo?status.svg)](https://godoc.org/github.com/rwxrob/foo)
 [![License](https://img.shields.io/badge/license-Apache2-brightgreen.svg)](LICENSE)
 
 ## Install
