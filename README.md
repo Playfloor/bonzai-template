@@ -11,7 +11,7 @@ making your first commit.*
 
 ## Install
 
-This command can be installed as a standalone program or composed into a
+This command can be installed as a standalone program or composed into 
 a Bonzai command tree.
 
 Standalone: 
