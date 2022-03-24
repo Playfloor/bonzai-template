@@ -1,9 +1,5 @@
 package main
 
-import (
-	foo "github.com/rwxrob/bonzai-foo"
-)
+import "github.com/rwxrob/foo"
 
-func main() {
-	foo.Cmd.Run()
-}
+func main() { foo.Cmd.Run() }
