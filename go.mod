@@ -1,3 +1,3 @@
-module github.com/rwxrob/bonzai-foo
+module github.com/rwxrob/foo
 
 go 1.18
