@@ -6,6 +6,7 @@ import (
 	"github.com/rwxrob/bonzai"
 	"github.com/rwxrob/bonzai/comp"
 	"github.com/rwxrob/bonzai/inc/help"
+	foo "github.com/rwxrob/foo/pkg"
 )
 
 var Cmd = &bonzai.Cmd{
@@ -16,7 +17,7 @@ var Cmd = &bonzai.Cmd{
 	Version:   `v0.0.1`,
 	Copyright: `Copyright 2021 Robert S Muhlestein`,
 	License:   `Apache-2.0`,
-	Commands:  []*bonzai.Cmd{help.Cmd, Bar, own},
+	Commands:  []*bonzai.Cmd{help.Cmd, Bar, own, pkgfoo},
 
 	Description: `
 		The foo commands do foo stuff. You can start the description here
@@ -77,6 +78,18 @@ var file = &bonzai.Cmd{
 			return x.UsageError()
 		}
 		log.Printf("would show file information about %v", args[0])
+		return nil
+	},
+}
+
+// When combining a high-level package library with a Bonzai command it
+// is customary to create a pkg directory to avoid cyclical package
+// import dependencies.
+
+var pkgfoo = &bonzai.Cmd{
+	Name: `pkgfoo`,
+	Call: func(_ *bonzai.Cmd, _ ...string) error {
+		foo.Foo()
 		return nil
 	},
 }

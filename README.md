@@ -23,7 +23,7 @@ go install github.com/rwxrob/foo/foo@latest
 Composed
 
 ```go
-package cmds
+package z
 
 import (
 	"github.com/rwxrob/bonzai"
@@ -31,7 +31,7 @@ import (
 )
 
 var Cmd = &bonzai.Cmd{
-	Name:     `cmds`,
+	Name:     `z`,
 	Commands: []*bonzai.Cmd{help.Cmd, foo.Cmd},
 }
 ```
