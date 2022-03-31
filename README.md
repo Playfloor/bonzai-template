@@ -1,4 +1,4 @@
-# Bonzai™ Sample `foo` Command (Template)
+# Go Bonzai™ composite command tree template
 
 *Create a new GitHub project using this template and change this
 README.md to match your project. Make all your template changes before
