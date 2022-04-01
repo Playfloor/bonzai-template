@@ -1,4 +1,4 @@
-# Go Bonzai™ composite command tree template
+# 🌳 Go Bonzai™ composite command tree template
 
 *Create a new GitHub project using this template and change this
 README.md to match your project. Make all your template changes before
@@ -25,13 +25,13 @@ Composed
 package z
 
 import (
-	"github.com/rwxrob/bonzai"
+	Z "github.com/rwxrob/bonzai"
 	"github.com/rwxrob/foo"
 )
 
-var Cmd = &bonzai.Cmd{
+var Cmd = &Z.Cmd{
 	Name:     `z`,
-	Commands: []*bonzai.Cmd{help.Cmd, foo.Cmd},
+	Commands: []*Z.Cmd{help.Cmd, foo.Cmd},
 }
 ```
 
