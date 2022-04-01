@@ -3,13 +3,13 @@ package foo
 import (
 	"log"
 
-	"github.com/rwxrob/bonzai"
+	Z "github.com/rwxrob/bonzai"
 	"github.com/rwxrob/bonzai/comp"
 	"github.com/rwxrob/bonzai/inc/help"
 	foo "github.com/rwxrob/foo/pkg"
 )
 
-var Cmd = &bonzai.Cmd{
+var Cmd = &Z.Cmd{
 
 	Name:      `foo`,
 	Summary:   `just a sample foo command`,
@@ -17,7 +17,7 @@ var Cmd = &bonzai.Cmd{
 	Version:   `v0.0.1`,
 	Copyright: `Copyright 2021 Robert S Muhlestein`,
 	License:   `Apache-2.0`,
-	Commands:  []*bonzai.Cmd{help.Cmd, Bar, own, pkgfoo},
+	Commands:  []*Z.Cmd{help.Cmd, Bar, own, pkgfoo},
 
 	Description: `
 		The foo commands do foo stuff. You can start the description here
@@ -41,22 +41,22 @@ var Cmd = &bonzai.Cmd{
 
 // Aliases are not commands but will be replaced by their target names.
 
-var Bar = &bonzai.Cmd{
+var Bar = &Z.Cmd{
 	Name:     `bar`,
 	Aliases:  []string{"B", "notbar"}, // to make a point
-	Commands: []*bonzai.Cmd{help.Cmd, file},
+	Commands: []*Z.Cmd{help.Cmd, file},
 
 	// Call first-class functions can be highly detailed, refer to an
 	// existing function someplace else, or can call high-level package
 	// library functions. Developers are encouraged to consider well where
 	// they maintain the core logic of their applications. Often, it will
-	// not be here within the bonzai.Cmd definition. One use case for
+	// not be here within the Z.Cmd definition. One use case for
 	// decoupled first-class Call functions is when creating multiple
 	// binaries for different target languages. In such cases this
-	// bonzai.Cmd definition is essentially just a wrapper for
+	// Z.Cmd definition is essentially just a wrapper for
 	// documentation and other language-specific embedded assets.
 
-	Call: func(_ *bonzai.Cmd, _ ...string) error { // note conventional _
+	Call: func(_ *Z.Cmd, _ ...string) error { // note conventional _
 		log.Printf("would bar stuff")
 		return nil
 	},
@@ -69,11 +69,11 @@ var Bar = &bonzai.Cmd{
 // shell interactivity where normally no shell is available, such as in
 // FROM SCRATCH containers that use a Bonzai tree as the core binary).
 
-var file = &bonzai.Cmd{
+var file = &Z.Cmd{
 	Name:      `file`,
-	Commands:  []*bonzai.Cmd{help.Cmd},
+	Commands:  []*Z.Cmd{help.Cmd},
 	Completer: comp.File,
-	Call: func(x *bonzai.Cmd, args ...string) error {
+	Call: func(x *Z.Cmd, args ...string) error {
 		if len(args) == 0 {
 			return x.UsageError()
 		}
@@ -86,9 +86,9 @@ var file = &bonzai.Cmd{
 // is customary to create a pkg directory to avoid cyclical package
 // import dependencies.
 
-var pkgfoo = &bonzai.Cmd{
+var pkgfoo = &Z.Cmd{
 	Name: `pkgfoo`,
-	Call: func(_ *bonzai.Cmd, _ ...string) error {
+	Call: func(_ *Z.Cmd, _ ...string) error {
 		foo.Foo()
 		return nil
 	},

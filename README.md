@@ -53,3 +53,7 @@ commands instead.
 All documentation (like manual pages) has been embedded into the source
 code of the application. See the source or run the program with help to
 access it.
+
+## Other Examples
+
+* <https://github.com/rwxrob/z> - the one that started it all
