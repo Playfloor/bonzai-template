@@ -4,14 +4,13 @@
 README.md to match your project. Make all your template changes before
 making your first commit.*
 
-![WIP](https://img.shields.io/badge/status-wip-red)
 [![GoDoc](https://godoc.org/github.com/rwxrob/foo?status.svg)](https://godoc.org/github.com/rwxrob/foo)
 [![License](https://img.shields.io/badge/license-Apache2-brightgreen.svg)](LICENSE)
 
 ## Install
 
-This command can be installed as a standalone program or composed into 
-a Bonzai command tree.
+This command can be installed as a standalone program or composed into a
+Bonzai command tree.
 
 Standalone
 
@@ -25,7 +24,7 @@ Composed
 package z
 
 import (
-	Z "github.com/rwxrob/bonzai"
+	Z "github.com/rwxrob/bonzai/z"
 	"github.com/rwxrob/foo"
 )
 

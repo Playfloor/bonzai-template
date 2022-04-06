@@ -3,9 +3,9 @@ package foo
 import (
 	"log"
 
-	Z "github.com/rwxrob/bonzai"
 	"github.com/rwxrob/bonzai/comp"
-	"github.com/rwxrob/bonzai/inc/help"
+	"github.com/rwxrob/bonzai/help"
+	Z "github.com/rwxrob/bonzai/z"
 	foo "github.com/rwxrob/foo/pkg"
 )
 
@@ -25,9 +25,9 @@ var Cmd = &Z.Cmd{
 		written in BonzaiMark™, a simplification of CommonMark that that
 		mostly follows Go documentation guidelines`,
 
-	Other: map[string]string{
-		`foo`:     `something about foo`,
-		`another`: `something about another command`,
+	Other: []Z.Section{
+		{`foo`, `something about foo`},
+		{`another`, `something about another command`},
 	},
 
 	// no Call since has Commands, if had Call would only call if

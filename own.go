@@ -7,9 +7,7 @@ package foo
 import (
 	"log"
 
-	// if typing bonzai becomes tedious use capital Z as a convention
-
-	Z "github.com/rwxrob/bonzai"
+	Z "github.com/rwxrob/bonzai/z"
 )
 
 var own = &Z.Cmd{
