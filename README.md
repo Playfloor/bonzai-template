@@ -55,8 +55,10 @@ access it.
 
 ## Reminders
 
+* Will need to `go get -u` to update dependencies
 * Change `foo` every place to your own
 * Change [`.github/FUNDING.yaml`] to your own information
+* Update `.gitignore` to your liking
 
 ## Other Examples
 
