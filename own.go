@@ -1,3 +1,6 @@
+// Copyright 2022 foo Authors
+// SPDX-License-Identifier: Apache-2.0
+
 package foo
 
 // Go treats all files as if they are, more or less, in the same large

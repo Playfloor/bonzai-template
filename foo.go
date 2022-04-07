@@ -1,3 +1,7 @@
+// Copyright 2022 foo Authors
+// SPDX-License-Identifier: Apache-2.0
+
+// Package foo provides the Bonzai command branch of the same name.
 package foo
 
 import (

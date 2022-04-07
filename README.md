@@ -1,5 +1,7 @@
 # 🌳 Go Bonzai™ composite command tree template
 
+> ⚡ Note, eventually this template may be replaced with `bonzai init`.
+
 *Create a new GitHub project using this template and change this
 README.md to match your project. Make all your template changes before
 making your first commit.*
@@ -55,10 +57,12 @@ access it.
 
 ## Reminders
 
-* Will need to `go get -u` to update dependencies
-* Change `foo` every place to your own
-* Change [`.github/FUNDING.yaml`] to your own information
+* Change `foo` every place to your project name (`git grep foo`)
+* Remove anything you don't need
+* Change `.github/FUNDING.yaml` to your own information
 * Update `.gitignore` to your liking
+* Will need to `go get -u` to update dependencies
+
 
 ## Other Examples
 

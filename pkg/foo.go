@@ -1,9 +1,9 @@
-/*
-Package foo is where the stand-alone high-level functions go that Bonzai
-branch depends on. This way people can import just pkg and use the
-functions directly from anything, not just Bonzai branches an trees. It
-is kept in pkg to avoid cyclical import problems.
-*/
+// Copyright 2022 foo Authors
+// SPDX-License-Identifier: Apache-2.0
+
+// Package foo provides high-level functions that are called from the Go
+// Bonzai branch of the same name providing universal access to the core
+// functionality.
 package foo
 
 import "fmt"
