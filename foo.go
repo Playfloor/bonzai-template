@@ -19,7 +19,7 @@ var Cmd = &Z.Cmd{
 	Name:      `foo`,
 	Summary:   `just a sample foo command`,
 	Usage:     `[B|bar|own|h|help]`,
-	Version:   `v0.0.1`,
+	Version:   `v2.2.8`,
 	Copyright: `Copyright 2021 Robert S Muhlestein`,
 	License:   `Apache-2.0`,
 	Commands:  []*Z.Cmd{help.Cmd, config.Cmd, Bar, own, pkgfoo},
