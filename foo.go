@@ -8,9 +8,10 @@ import (
 	"log"
 
 	"github.com/rwxrob/bonzai/comp"
-	"github.com/rwxrob/bonzai/help"
 	Z "github.com/rwxrob/bonzai/z"
+	"github.com/rwxrob/config"
 	foo "github.com/rwxrob/foo/pkg"
+	"github.com/rwxrob/help"
 )
 
 var Cmd = &Z.Cmd{
@@ -21,7 +22,7 @@ var Cmd = &Z.Cmd{
 	Version:   `v0.0.1`,
 	Copyright: `Copyright 2021 Robert S Muhlestein`,
 	License:   `Apache-2.0`,
-	Commands:  []*Z.Cmd{help.Cmd, Bar, own, pkgfoo},
+	Commands:  []*Z.Cmd{help.Cmd, config.Cmd, Bar, own, pkgfoo},
 
 	Description: `
 		The foo commands do foo stuff. You can start the description here
