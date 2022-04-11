@@ -7,6 +7,7 @@ require (
 	github.com/rwxrob/conf v0.5.1
 	github.com/rwxrob/config v0.4.3
 	github.com/rwxrob/help v0.3.1
+	github.com/rwxrob/vars v0.2.4
 )
 
 require (
