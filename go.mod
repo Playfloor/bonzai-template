@@ -3,9 +3,9 @@ module github.com/rwxrob/foo
 go 1.18
 
 require (
-	github.com/rwxrob/bonzai v0.5.0
-	github.com/rwxrob/config v0.4.2
-	github.com/rwxrob/help v0.2.5
+	github.com/rwxrob/bonzai v0.6.3
+	github.com/rwxrob/config v0.4.3
+	github.com/rwxrob/help v0.3.1
 )
 
 require (
@@ -24,7 +24,7 @@ require (
 	github.com/rwxrob/scan v0.6.1 // indirect
 	github.com/rwxrob/structs v0.5.1 // indirect
 	github.com/rwxrob/term v0.2.6 // indirect
-	github.com/rwxrob/to v0.4.6 // indirect
+	github.com/rwxrob/to v0.5.2 // indirect
 	github.com/rwxrob/yq v0.2.4 // indirect
 	github.com/timtadh/data-structures v0.5.3 // indirect
 	github.com/timtadh/lexmachine v0.2.2 // indirect

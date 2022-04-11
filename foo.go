@@ -19,10 +19,14 @@ var Cmd = &Z.Cmd{
 
 	Name:      `foo`,
 	Summary:   `just a sample foo command`,
-	Version:   `v2.3.0`,
+	Version:   `v2.3.1`,
 	Copyright: `Copyright 2021 Robert S Muhlestein`,
 	License:   `Apache-2.0`,
-	Commands:  []*Z.Cmd{help.Cmd, config.Cmd, Bar, own, pkgfoo},
+	Site:      `rwxrob.tv`,
+	Source:    `git@github.com:rwxrob/foo.git`,
+	Issues:    `github.com/rwxrob/foo/issues`,
+
+	Commands: []*Z.Cmd{help.Cmd, config.Cmd, Bar, own, pkgfoo},
 
 	Dynamic: template.FuncMap{
 		"uname": func(_ *Z.Cmd) string { return Z.Out("uname", "-a") },
