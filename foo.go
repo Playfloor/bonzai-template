@@ -13,20 +13,24 @@ import (
 	"github.com/rwxrob/conf"
 	foo "github.com/rwxrob/foo/pkg"
 	"github.com/rwxrob/help"
+	"github.com/rwxrob/vars"
 )
 
 var Cmd = &Z.Cmd{
 
 	Name:      `foo`,
 	Summary:   `just a sample foo command`,
-	Version:   `v2.3.2`,
+	Version:   `v2.3.3`,
 	Copyright: `Copyright 2021 Robert S Muhlestein`,
 	License:   `Apache-2.0`,
 	Site:      `rwxrob.tv`,
 	Source:    `git@github.com:rwxrob/foo.git`,
 	Issues:    `github.com/rwxrob/foo/issues`,
 
-	Commands: []*Z.Cmd{help.Cmd, conf.Cmd, Bar, own, pkgfoo},
+	Commands: []*Z.Cmd{
+		help.Cmd, conf.Cmd, vars.Cmd, // common, first is default
+		Bar, own, pkgfoo, // custom
+	},
 
 	Dynamic: template.FuncMap{
 		"uname": func(_ *Z.Cmd) string { return Z.Out("uname", "-a") },
