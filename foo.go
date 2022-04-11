@@ -10,7 +10,7 @@ import (
 
 	"github.com/rwxrob/bonzai/comp"
 	Z "github.com/rwxrob/bonzai/z"
-	"github.com/rwxrob/config"
+	"github.com/rwxrob/conf"
 	foo "github.com/rwxrob/foo/pkg"
 	"github.com/rwxrob/help"
 )
@@ -26,7 +26,7 @@ var Cmd = &Z.Cmd{
 	Source:    `git@github.com:rwxrob/foo.git`,
 	Issues:    `github.com/rwxrob/foo/issues`,
 
-	Commands: []*Z.Cmd{help.Cmd, config.Cmd, Bar, own, pkgfoo},
+	Commands: []*Z.Cmd{help.Cmd, conf.Cmd, Bar, own, pkgfoo},
 
 	Dynamic: template.FuncMap{
 		"uname": func(_ *Z.Cmd) string { return Z.Out("uname", "-a") },

@@ -3,7 +3,8 @@ module github.com/rwxrob/foo
 go 1.18
 
 require (
-	github.com/rwxrob/bonzai v0.6.3
+	github.com/rwxrob/bonzai v0.7.0
+	github.com/rwxrob/conf v0.5.1
 	github.com/rwxrob/config v0.4.3
 	github.com/rwxrob/help v0.3.1
 )
