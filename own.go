@@ -13,6 +13,7 @@ import (
 	Z "github.com/rwxrob/bonzai/z"
 )
 
+// private leaf
 var own = &Z.Cmd{
 	Name: `own`,
 	Call: func(caller *Z.Cmd, none ...string) error {

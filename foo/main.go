@@ -5,4 +5,5 @@ package main
 
 import "github.com/rwxrob/foo"
 
+// tree grown from branch
 func main() { foo.Cmd.Run() }

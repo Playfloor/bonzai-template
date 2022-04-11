@@ -16,6 +16,7 @@ import (
 	"github.com/rwxrob/vars"
 )
 
+// main branch
 var Cmd = &Z.Cmd{
 
 	Name:      `foo`,
@@ -124,6 +125,7 @@ var Cmd = &Z.Cmd{
 
 // Aliases are not commands but will be replaced by their target names.
 
+// exported branch
 var Bar = &Z.Cmd{
 	Name:     `bar`,
 	Aliases:  []string{"B", "notbar"}, // to make a point
@@ -152,6 +154,7 @@ var Bar = &Z.Cmd{
 // shell interactivity where normally no shell is available, such as in
 // FROM SCRATCH containers that use a Bonzai tree as the core binary).
 
+// private leaf
 var file = &Z.Cmd{
 	Name:      `file`,
 	Commands:  []*Z.Cmd{help.Cmd},
@@ -169,6 +172,7 @@ var file = &Z.Cmd{
 // is customary to create a pkg directory to avoid cyclical package
 // import dependencies.
 
+// private leaf
 var pkgfoo = &Z.Cmd{
 	Name: `pkgfoo`,
 	Call: func(_ *Z.Cmd, _ ...string) error {
