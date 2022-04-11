@@ -21,7 +21,7 @@ var Cmd = &Z.Cmd{
 
 	Name:      `foo`,
 	Summary:   `just a sample foo command`,
-	Version:   `v2.3.3`,
+	Version:   `v2.3.4`,
 	Copyright: `Copyright 2021 Robert S Muhlestein`,
 	License:   `Apache-2.0`,
 	Site:      `rwxrob.tv`,
